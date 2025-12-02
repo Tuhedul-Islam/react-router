@@ -4,6 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ## Learning 
 ```jsx
+    const navigate = useNavigate();
 
     //Redirect to Blogs: using useNavigate Hook
     <button onClick={() => navigate('/blogs')}>Back to Blogs</button>
