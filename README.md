@@ -5,6 +5,14 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ## Learning 
 ```jsx
     const navigate = useNavigate();
+    const { division } = useParams();
+    const [searchParams, setSearchParams] = useSearchParams(); //Query Params
+
+    const [query, setQuery] = React.useState({
+        name: searchParams.get('name') || '',
+        age: searchParams.get('age') || ''
+    });
+    const {name, age} = query;
 
     //Redirect to Blogs: using useNavigate Hook
     <button onClick={() => navigate('/blogs')}>Back to Blogs</button>
