@@ -6,6 +6,8 @@ import Contract from './pages/Contract.jsx'
 import Error from './pages/Error.jsx'
 import Navbar from './components/Navbar.jsx'
 import Blog from './pages/Blog.jsx'
+import Users from './pages/Users.jsx'
+import Division from './pages/Division.jsx'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
             <Route path='/blogs' element={<Blogs/>}></Route>
             <Route path='/blogs/:title' element={<Blog/>}></Route>
             <Route path='/contract' element={<Contract/>}></Route>
+            <Route path='/division/:division' element={<Division/>}></Route>
+            <Route path='/users' element={<Users/>}></Route>
             <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>

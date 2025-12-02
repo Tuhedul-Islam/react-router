@@ -23,7 +23,7 @@ const Blogs = () => {
                         <h3>{blog.title}</h3>
                         <p> { truncatedData(blog.content, 100)} </p>
 
-                        <Link to={`/blogs/${blog.title}`} >Read More</Link>
+                        <Link to={`/blogs/${blog.title}`} state={{id: blog.id, title: blog.title, content: blog.content}}>Read More</Link>
                     </div>
                 )
             })
