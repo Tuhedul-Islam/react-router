@@ -10,7 +10,7 @@ const Contract = () => {
 
   return (
     <div>
-        <h2>Contract</h2>
+        <h2>Contact</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             Natus illum assumenda Lorem ipsum dolor sit amet consectetur adipisicing elit. 
